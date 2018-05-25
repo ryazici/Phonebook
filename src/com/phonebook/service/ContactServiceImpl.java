@@ -52,7 +52,6 @@ public class ContactServiceImpl implements ContactService {
 	
 	@Transactional
 	public void removeContact(Contact contact) {
-		if(contact != null)
 		contactDAO.removeContact(contact);
 	};
 
